@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <br>
+      <div class="row">
+        <button 
+          class="btn btn-primary"
+          (click)="buttonClick()"
+        >Display details</button>
+      </div>
+      <br>
+      <p *ngIf="displayPass" >Secret Password = tuna</p>
+      <div *ngFor="let click of clicks">
+        <p
+          [ngStyle]="{'background-color' : getBackground(click)}"
+          [ngClass]="{overFive : click > clicks[3]}"
+          >
+          {{click}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <br>
+  <input 
+  	type="text" 
+  	class="form-control" 
+  	[(ngModel)]="username"
+  	(input)="checkEmptyField($event)"
+  >
+  
+  <br>
+  <p>{{username}}</p>
+  
+  <button 
+  	class="btn btn-primary"
+  	[disabled]="emptyUsername"
+  	(click)="onClick()"
+  	>
+  OK
+  </button>
+
+  <label>{{emptyUsername}}</label>
+</div>

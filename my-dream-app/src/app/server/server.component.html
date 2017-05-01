@@ -1,0 +1,5 @@
+<!-- ngStyle applica uno stile, ngClass applica una classe di stile -->
+<h2 [ngStyle]="{'background-color' : getColor()}"
+	[ngClass]="{online : serverStatus === 'online'}">
+	The server {{ serverName }} has id {{ serverId }} and is {{ getServerStatus() }} 
+</h2>
