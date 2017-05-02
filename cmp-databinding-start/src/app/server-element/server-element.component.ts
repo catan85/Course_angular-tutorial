@@ -5,6 +5,7 @@ import {
 	OnChanges, 
 	DoCheck,
 	AfterContentInit,
+	AfterContentChecked,
 	SimpleChanges} from '@angular/core';
 
 @Component({
@@ -12,7 +13,13 @@ import {
   templateUrl: './server-element.component.html',
   styleUrls: ['./server-element.component.css']
 })
-export class ServerElementComponent implements OnInit, OnChanges, DoCheck, AfterContentInit {
+export class ServerElementComponent implements 
+	OnInit, 
+	OnChanges, 
+	DoCheck, 
+	AfterContentInit, 
+	AfterContentChecked {
+  
   @Input('srvElement') element : {type: string, name: string, content: string};
   @Input() name :string;
   constructor() { 
@@ -36,6 +43,12 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck, After
   ngAfterContentInit()
   {
 	console.log("ngAfterContentInit called.");	
+
+  }
+
+  ngAfterContentChecked()
+  {
+	console.log("ngAfterContentChecked called.");	
 
   }
 }
