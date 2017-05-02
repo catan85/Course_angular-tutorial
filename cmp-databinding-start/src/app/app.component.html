@@ -6,9 +6,11 @@
   <hr>
   <div class="row">
     <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="onChangeFirst()">Change first Element</button>
       <app-server-element 
       *ngFor="let serverElement of serverElements"
-      [srvElement]="serverElement">
+      [srvElement]="serverElement"
+      [name]="serverElement.name">
         
       <!-- Il prox paragrafo viene iniettato tramite ng-content nel componente -->
       <!-- non mi funziona!!!!-->
