@@ -9,6 +9,9 @@ import {
 	AfterViewInit,
 	AfterViewChecked,
 	OnDestroy,
+	ViewChild,
+	ElementRef,
+	ContentChild,
 	SimpleChanges} from '@angular/core';
 
 @Component({
@@ -24,16 +27,22 @@ export class ServerElementComponent implements
 	AfterContentChecked,
 	AfterViewInit,
 	AfterViewChecked,
-	OnDestroy {
+	OnDestroy{
   
   @Input('srvElement') element : {type: string, name: string, content: string};
   @Input() name :string;
+
+  @ViewChild('heading') header : ElementRef;
+  @ContentChild('contentParagraph') paragraph :ElementRef;
+
   constructor() { 
   	console.log("Contructor called.");
   }
 
   ngOnInit() {
   	console.log("ngOnInit called.");
+  	console.log("Text content: .... " + this.header.nativeElement.textContent);
+  	console.log("Paragraph content: .... " + this.paragraph.nativeElement.textContent);
   }
 
   ngOnChanges(changes: SimpleChanges){
@@ -60,7 +69,9 @@ export class ServerElementComponent implements
   ngAfterViewInit()
   {
 	console.log("ngAfterViewInit called.");	
-
+	console.log("Text content: .... " + this.header.nativeElement.textContent);
+  	console.log("Paragraph content: .... " + this.paragraph.nativeElement.textContent);
+ 
   }
 
   ngAfterViewChecked()
