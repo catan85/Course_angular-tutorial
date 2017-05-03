@@ -1,5 +1,16 @@
+
 <div class="container">
   <div class="row">
+    
+    <app-game-control 
+      (NewGameData)="OnNewGameData($event);">
+    </app-game-control>
+
+    <app-even [currentNumber]="evenNumber"></app-even>
+    <app-odd [currentNumber]="oddNumber"></app-odd>
+    
+
+
     <div class="col-xs-12">
       <h3>Bind it!</h3>
       <ol>
