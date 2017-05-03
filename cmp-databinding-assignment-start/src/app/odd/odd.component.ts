@@ -9,7 +9,6 @@ export class OddComponent implements OnInit , Input{
 
 	@Input() currentNumber : number;
 
-
   constructor() { }
 
   ngOnInit() {

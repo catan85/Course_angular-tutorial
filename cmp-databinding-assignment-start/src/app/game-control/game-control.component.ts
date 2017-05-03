@@ -22,7 +22,7 @@ export class GameControlComponent implements OnInit{
 
 	onStopClick(event: EventListener)
 	{
-		clearTimeout(this.timer);
+		clearInterval(this.timer);
 	}
 
 	timerTick(ref)

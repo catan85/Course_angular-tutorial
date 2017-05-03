@@ -9,14 +9,27 @@ export class AppComponent {
 	evenNumber: number;
 	oddNumber: number;
 
+	numbers= [];
+
 	OnNewGameData(data : {currentNumber :number}){
-		if (data.currentNumber % 2 == 0)
-		{
-			this.evenNumber = data.currentNumber;
-		}else{
-			this.oddNumber = data.currentNumber;
-		}
+		this.numbers.push(data.currentNumber);
 	}
+
+	isEven(number)
+	{
+		return number % 2 == 0;
+	}
+
+	isOdd(number)
+	{
+		return number % 2 != 0;
+	}
+	//	if (data.currentNumber % 2 == 0)
+	//	{
+	//		this.evenNumber = data.currentNumber;
+	//	}else{
+	//		this.oddNumber = data.currentNumber;
+	//	}
 
 	constructor() { }
 }
