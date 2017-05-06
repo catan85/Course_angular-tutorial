@@ -1,8 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "new-cli",
-    "ejected": true
+    "version": "1.0.0-beta.32.3",
+    "name": "new-cli"
   },
   "apps": [
     {
@@ -17,14 +17,12 @@
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "testTsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css"
       ],
-      "scripts": [
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -54,7 +52,6 @@
   },
   "defaults": {
     "styleExt": "css",
-    "component": {
-    }
+    "component": {}
   }
 }

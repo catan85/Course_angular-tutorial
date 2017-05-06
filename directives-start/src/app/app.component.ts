@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   evenNumbers = [ 2,  4,];
+  
   oddNumbers = [1, 3, 5];
   onlyOdd = false;
   value = 100;
