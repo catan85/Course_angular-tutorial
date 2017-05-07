@@ -13,7 +13,11 @@ export class AppComponent  {
 
   constructor(private counterService : CounterService )
   {
-
+    this.counterService.counterIncreased.subscribe(
+      (counter: number) => this.counter = counter
+      );
   }
+
+ 
 
 }

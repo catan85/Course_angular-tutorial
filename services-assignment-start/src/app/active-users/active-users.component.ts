@@ -7,7 +7,6 @@ import { UsersService } from '../users.service';
 })
 export class ActiveUsersComponent implements OnInit {
   @Input() users: string[];
-
   constructor(private usersService : UsersService)
   {
   };
