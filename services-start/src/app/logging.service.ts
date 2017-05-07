@@ -1,6 +1,6 @@
 export class LoggingService {
-	logStatusChange(status: string)
+	log(text: string)
 	{
-		console.log('A server status changed, new status: ' + status);
+		console.log('log>> ' + text);
 	}
 }
