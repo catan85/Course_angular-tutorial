@@ -30,11 +30,13 @@ export class EditServerComponent implements OnInit, CanComponentDeactivate {
     this.route.queryParams.subscribe(
         (params: Params) => {
           this.allowEdit = params['allowEdit'] === '1' ? true : false;
+          const currentServerId = +params['id'];
+          this.server = this.serversService.getServer(currentServerId);
         }
       ); 
     this.route.fragment.subscribe();
-
-    this.server = this.serversService.getServer(1);
+    const currentServerId = +this.route.snapshot.params['id'];
+    this.server = this.serversService.getServer(currentServerId);
     this.serverName = this.server.name;
     this.serverStatus = this.server.status;
   }
@@ -46,9 +48,11 @@ export class EditServerComponent implements OnInit, CanComponentDeactivate {
   }
 
   canDeactivate() : Observable<boolean> | Promise<boolean> | boolean {
+
     if (!this.allowEdit){
       return true;
     }
+
     if ((this.serverName !== this.server.name || this.serverStatus !== this.server.status)
       && !this.changesSaved)
     {
