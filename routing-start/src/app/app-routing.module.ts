@@ -34,8 +34,10 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-	imports: [
-		RouterModule.forRoot(appRoutes)
+	imports: [			
+		RouterModule.forRoot(appRoutes) 				
+		//use hash solo per vecchi browser o server che redirectano a 404
+		//RouterModule.forRoot(appRoutes, {useHash: true}) 
 	],
 	exports: [RouterModule]
 })
