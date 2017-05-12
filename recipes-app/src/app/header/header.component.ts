@@ -13,17 +13,4 @@ export class HeaderComponent
 	{
 	}
 
-	//@Output() currentViewChanged = new EventEmitter<string>();
-
-	onRecipesClick(event)
-	{
-		//this.currentViewChanged.emit("recipes");
-		this.router.navigate(['recipes'], {relativeTo: this.activatedRoute});
-	}
-
-	onShoppingListClick(event)
-	{
-		//this.currentViewChanged.emit("ingredients");
-		this.router.navigate(['shopping-list'], {relativeTo: this.activatedRoute});
-	}
 }

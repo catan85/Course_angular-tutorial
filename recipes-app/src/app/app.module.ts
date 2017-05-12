@@ -13,13 +13,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { DropdownDirective } from './shared/dropdown-directive';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
-
-import { Routes, RouterModule } from '@angular/router';
-
-const appRoutes : Routes = [
-  { path: 'recipes', component: RecipesComponent},
-  { path: 'shopping-list', component: ShoppingListComponent}
-];
+import { AppRoutingModule} from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +26,14 @@ const appRoutes : Routes = [
     RecipeDetailComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    DropdownDirective
+    DropdownDirective,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    AppRoutingModule
   ],
   bootstrap: [AppComponent],
   providers: [ ShoppingListService ]
