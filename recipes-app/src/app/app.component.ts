@@ -6,16 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	currentView :string;
+	//currentView :string;
 
 	constructor() {
-  		this.currentView = '';
+  		//this.currentView = '';
   	}
 
+
+    /*
   	changeView(currentView)
   	{
   		console.log("view changed: " + currentView);
   		this.currentView = currentView;
   	}
+    */
 
 }
