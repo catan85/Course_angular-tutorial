@@ -1,0 +1,970 @@
+webpackJsonp([1,4],{
+
+/***/ 125:
+/***/ (function(module, exports) {
+
+function webpackEmptyContext(req) {
+	throw new Error("Cannot find module '" + req + "'.");
+}
+webpackEmptyContext.keys = function() { return []; };
+webpackEmptyContext.resolve = webpackEmptyContext;
+module.exports = webpackEmptyContext;
+webpackEmptyContext.id = 125;
+
+
+/***/ }),
+
+/***/ 126:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(144);
+
+
+
+
+if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
+}
+__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 135:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recipes_recipes_component__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shopping_list_shopping_list_component__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__page_not_found_page_not_found_component__ = __webpack_require__(80);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var appRoutes = [
+    { path: '', redirectTo: '/recipes', pathMatch: 'full' },
+    { path: 'recipes', component: __WEBPACK_IMPORTED_MODULE_2__recipes_recipes_component__["a" /* RecipesComponent */] },
+    { path: 'shopping-list', component: __WEBPACK_IMPORTED_MODULE_3__shopping_list_shopping_list_component__["a" /* ShoppingListComponent */] },
+    { path: 'not-found', component: __WEBPACK_IMPORTED_MODULE_4__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */] },
+    { path: '**', redirectTo: '/not-found' },
+];
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
+    }
+    return AppRoutingModule;
+}());
+AppRoutingModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(appRoutes)
+            //use hash solo per vecchi browser o server che redirectano a 404
+            //RouterModule.forRoot(appRoutes, {useHash: true}) 
+        ],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+    })
+], AppRoutingModule);
+
+//# sourceMappingURL=app-routing.module.js.map
+
+/***/ }),
+
+/***/ 136:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AppComponent = (function () {
+    //currentView :string;
+    function AppComponent() {
+        //this.currentView = '';
+    }
+    return AppComponent;
+}());
+AppComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-root',
+        template: __webpack_require__(221),
+        styles: [__webpack_require__(203)]
+    }),
+    __metadata("design:paramtypes", [])
+], AppComponent);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 137:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__header_header_component__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__recipes_recipes_component__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__recipes_recipe_list_recipe_list_component__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__recipes_recipe_list_recipe_item_recipe_item_component__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__recipes_recipe_detail_recipe_detail_component__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shopping_list_shopping_list_component__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shopping_list_shopping_edit_shopping_edit_component__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shared_dropdown_directive__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shopping_list_shopping_list_service__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_routing_module__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__page_not_found_page_not_found_component__ = __webpack_require__(80);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__header_header_component__["a" /* HeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__recipes_recipes_component__["a" /* RecipesComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__recipes_recipe_list_recipe_list_component__["a" /* RecipeListComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__recipes_recipe_list_recipe_item_recipe_item_component__["a" /* RecipeItemComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__recipes_recipe_detail_recipe_detail_component__["a" /* RecipeDetailComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__shopping_list_shopping_list_component__["a" /* ShoppingListComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__shopping_list_shopping_edit_shopping_edit_component__["a" /* ShoppingEditComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__shared_dropdown_directive__["a" /* DropdownDirective */],
+            __WEBPACK_IMPORTED_MODULE_15__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_14__app_routing_module__["a" /* AppRoutingModule */]
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_13__shopping_list_shopping_list_service__["a" /* ShoppingListService */]]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 138:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(79);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var HeaderComponent = (function () {
+    function HeaderComponent(router, activatedRoute) {
+        this.router = router;
+        this.activatedRoute = activatedRoute;
+    }
+    return HeaderComponent;
+}());
+HeaderComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-header',
+        template: __webpack_require__(222)
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _b || Object])
+], HeaderComponent);
+
+var _a, _b;
+//# sourceMappingURL=header.component.js.map
+
+/***/ }),
+
+/***/ 139:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__recipe_model__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recipes_service__ = __webpack_require__(36);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecipeDetailComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var RecipeDetailComponent = (function () {
+    function RecipeDetailComponent(recipesService) {
+        this.recipesService = recipesService;
+    }
+    RecipeDetailComponent.prototype.ngOnInit = function () {
+        console.log("detail log: ");
+        console.log(this.recipe);
+    };
+    RecipeDetailComponent.prototype.toShoppingList = function () {
+        this.recipesService.addIngredientsToShoppingList(this.recipe.ingredients);
+    };
+    return RecipeDetailComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Input */])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__recipe_model__["a" /* Recipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__recipe_model__["a" /* Recipe */]) === "function" && _a || Object)
+], RecipeDetailComponent.prototype, "recipe", void 0);
+RecipeDetailComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-recipe-detail',
+        template: __webpack_require__(224),
+        styles: [__webpack_require__(205)]
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__recipes_service__["a" /* RecipesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__recipes_service__["a" /* RecipesService */]) === "function" && _b || Object])
+], RecipeDetailComponent);
+
+var _a, _b;
+//# sourceMappingURL=recipe-detail.component.js.map
+
+/***/ }),
+
+/***/ 140:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__recipe_model__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recipes_service__ = __webpack_require__(36);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecipeItemComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var RecipeItemComponent = (function () {
+    function RecipeItemComponent(recipesService) {
+        this.recipesService = recipesService;
+        this.name = 'none';
+        this.description = 'none';
+        this.imagePath = 'none';
+    }
+    RecipeItemComponent.prototype.ngOnInit = function () {
+        this.name = this.recipeData.name;
+        this.description = this.recipeData.description;
+        this.imagePath = this.recipeData.imagePath;
+    };
+    RecipeItemComponent.prototype.recipeSelected = function () {
+        this.recipesService.recipeSelected.emit(this.recipeData);
+    };
+    return RecipeItemComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Input */])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__recipe_model__["a" /* Recipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__recipe_model__["a" /* Recipe */]) === "function" && _a || Object)
+], RecipeItemComponent.prototype, "recipeData", void 0);
+RecipeItemComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-recipe-item',
+        template: __webpack_require__(225),
+        styles: [__webpack_require__(206)]
+    }),
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__recipes_service__["a" /* RecipesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__recipes_service__["a" /* RecipesService */]) === "function" && _b || Object])
+], RecipeItemComponent);
+
+var _a, _b;
+//# sourceMappingURL=recipe-item.component.js.map
+
+/***/ }),
+
+/***/ 141:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__recipes_service__ = __webpack_require__(36);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecipeListComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RecipeListComponent = (function () {
+    function RecipeListComponent(recipesService) {
+        this.recipesService = recipesService;
+    }
+    ;
+    RecipeListComponent.prototype.ngOnInit = function () {
+        this.recipes = this.recipesService.getRecipes();
+    };
+    return RecipeListComponent;
+}());
+RecipeListComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-recipe-list',
+        template: __webpack_require__(226),
+        styles: [__webpack_require__(207)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__recipes_service__["a" /* RecipesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__recipes_service__["a" /* RecipesService */]) === "function" && _a || Object])
+], RecipeListComponent);
+
+var _a;
+//# sourceMappingURL=recipe-list.component.js.map
+
+/***/ }),
+
+/***/ 142:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DropdownDirective; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var DropdownDirective = (function () {
+    function DropdownDirective() {
+        this.isOpen = false;
+    }
+    DropdownDirective.prototype.onClick = function (eventData) {
+        this.isOpen = !this.isOpen;
+    };
+    return DropdownDirective;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* HostBinding */])('class.open'),
+    __metadata("design:type", Object)
+], DropdownDirective.prototype, "isOpen", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* HostListener */])('click'),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], DropdownDirective.prototype, "onClick", null);
+DropdownDirective = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* Directive */])({
+        selector: '[appDropdown]'
+    })
+], DropdownDirective);
+
+//# sourceMappingURL=dropdown-directive.js.map
+
+/***/ }),
+
+/***/ 143:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_ingredient_model__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shopping_list_service__ = __webpack_require__(37);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShoppingEditComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ShoppingEditComponent = (function () {
+    function ShoppingEditComponent(shoppingListService) {
+        this.shoppingListService = shoppingListService;
+    }
+    ShoppingEditComponent.prototype.ngOnInit = function () {
+    };
+    ShoppingEditComponent.prototype.onAddClick = function () {
+        var name = this.nameInput.nativeElement.value;
+        var amount = this.amountInput.nativeElement.value;
+        this.shoppingListService.addIngredient(new __WEBPACK_IMPORTED_MODULE_1__shared_ingredient_model__["a" /* Ingredient */](name, amount));
+    };
+    return ShoppingEditComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('nameInput'),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ElementRef */]) === "function" && _a || Object)
+], ShoppingEditComponent.prototype, "nameInput", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* ViewChild */])('amountInput'),
+    __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* ElementRef */]) === "function" && _b || Object)
+], ShoppingEditComponent.prototype, "amountInput", void 0);
+ShoppingEditComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-shopping-edit',
+        template: __webpack_require__(228),
+        styles: [__webpack_require__(209)]
+    }),
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shopping_list_service__["a" /* ShoppingListService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__shopping_list_service__["a" /* ShoppingListService */]) === "function" && _c || Object])
+], ShoppingEditComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=shopping-edit.component.js.map
+
+/***/ }),
+
+/***/ 144:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
+var environment = {
+    production: false
+};
+//# sourceMappingURL=environment.js.map
+
+/***/ }),
+
+/***/ 203:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 204:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 205:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 206:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 207:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 208:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 209:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 210:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(13)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 221:
+/***/ (function(module, exports) {
+
+module.exports = "<app-header></app-header>\r\n<div class=\"container\">\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-12\">\r\n\t\t\t<router-outlet></router-outlet>\r\n\t\t\t<!--\r\n\t\t\t<app-recipes *ngIf=\"currentView == 'recipes';\"></app-recipes>\r\n\t\t\t<app-shopping-list *ngIf=\"currentView == 'ingredients';\"></app-shopping-list> -->\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+
+/***/ }),
+
+/***/ 222:
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default\">\r\n\t<div class=\"container-fluid\">\r\n\t\t<div class=\"navbar-header\">\r\n\t\t\t<a href=\"#\" class=\"navbar-brand\">Recipe Book </a>\r\n\t\t</div>\r\n\r\n\t\t<div class=\"collapse navbar-collapse\">\r\n\t\t\t<ul class=\"nav navbar-nav\">\r\n\t\t\t\t<li><a routerLink=\"/recipes\">Recipes</a></li>\r\n\t\t\t\t<li><a routerLink=\"/shopping-list\">Shopping list</a></li>\r\n\t\t\t</ul>\r\n\t\t\t<ul class=\"nav navbar-nav navbar-right\">\r\n\t\t\t\t<li appDropdown class=\"dropdown\">\r\n\t\t\t\t\t<a href=\"#\" class=\"dropdown-toggle\" role=\"button\">Manage <span class=\"caret\"></span></a>\r\n\t\t\t\t\t<ul class=\"dropdown-menu\">\r\n\t\t\t\t\t\t<li><a href=\"#\">Save data</a></li>\r\n\t\t\t\t\t\t<li><a href=\"#\">Fetch data</a></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n\t\t</div>\r\n\t</div>\r\n</nav>"
+
+/***/ }),
+
+/***/ 223:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  page-not-found works!\n</p>\n"
+
+/***/ }),
+
+/***/ 224:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n\t<div class=\"col-xs-12\">\n\t\t<img \n\t\t\t[src]=\"recipe.imagePath\" \n\t\t\talt=\"{{recipe.name}}\" \n\t\t\tclass=\"img-responsive\"\n\t\t\tstyle=\"max-height: 300px\">\n\t</div>\n</div>\n<div class=\"col-xs-12\">\n\t<h1>{{recipe.name}}</h1>\n</div>\n<div class=\"row\">\n\t<div class=\"col-xs-12\">\n\t\t<div \n\t\tclass=\"btn-group\" \n\t\tappDropdown>\n\t\t\t<button \n\t\t\ttype=\"button\"\n\t\t\tclass=\"btn btn-primary dropdown-toggle\">Manage Recipe <span class=\"caret\"></span>\n\t\t\t</button>\n\t\t\t<ul class=\"dropdown-menu\">\n\t\t\t\t<li (click)=\"toShoppingList();\" ><a href=\"#\">To Shopping List</a></li>\n\t\t\t\t<li><a href=\"#\">Edit recipe</a></li>\n\t\t\t\t<li><a href=\"#\">Delete recipe</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</div>\n<div class=\"row\">\n\t<div class=\"col-xs-12\">\n\t\t{{recipe.description}}\n\t</div>\n</div>\n<div class=\"row\">\n\t<div class=\"col-xs-12\">\n\t\t<ul class=\"list-group\">\n\t\t\t<li \n\t\t\t*ngFor=\"let ingredient of recipe.ingredients;\"\n\t\t\tclass=\"list-group-item\">{{ingredient.name}} - {{ingredient.amount}}</li>\n\t\t</ul>\n\t</div>\n</div>"
+
+/***/ }),
+
+/***/ 225:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"col-xs-12\">\n\t<a \n\t(click)=\"recipeSelected();\"\n\thref=\"#\" class=\"list-group-item clearfix\">\n\t\t<div class=\"pull-left\">\n\t\t\t<h4 class=\"list-group-item clearfix\">{{recipeData.name}}</h4>\n\t\t\t<p class=\"list-group-item-text\">{{recipeData.description}}</p>\n\t\t</div>\n\t\t<span class=\"pull-right\">\n\t\t\t<img \n\t\t\t[src]=\"recipeData.imagePath\" \n\t\t\talt=\"{{recipeData.name}}\" \n\t\t\tclass=\"img-responsive\" style=\"max-height: 50px;\">\n\t\t</span>\n\t</a>\n</div>"
+
+/***/ }),
+
+/***/ 226:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n\t<div class=\"col-xs-12\">\n\t\t<button\tclass=\"btn btn-success\">New Recipe</button>\n\t</div>\n</div>\n<hr>\n<div *ngFor=\"let recipe of recipes;\" class=\"row\">\n\t<app-recipe-item [recipeData]=\"recipe\"\n\t></app-recipe-item>\n</div>"
+
+/***/ }),
+
+/***/ 227:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n\t<div class=\"col-md-5\">\n\t\t<app-recipe-list></app-recipe-list>\n\t</div>\n\t<div class=\"col-md-7\">\n\n\t\t<app-recipe-detail \n\t\t\t*ngIf=\"selectedRecipe; else infoText\"\n\t\t\t[recipe]=\"selectedRecipe\">\n\t\t</app-recipe-detail>\n\n\t\t<ng-template #infoText>\n\t\t\t<p>Please select a recipe.</p>\n\t\t</ng-template>\n\t\t\n\t</div>\n</div>\n"
+
+/***/ }),
+
+/***/ 228:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n\t<div class=\"col-xs-12\">\n\t\t<form>\n\t\t\t<div class=\"row\">\n\t\t\t\t<div class=\"col-sm-5 form-group\">\n\t\t\t\t\t<label for=\"name\">Name</label>\n\t\t\t\t\t<input \n\t\t\t\t\t\ttype=\"text\" \n\t\t\t\t\t\tid=\"name\" \n\t\t\t\t\t\tclass =\"form-control\"\n\t\t\t\t\t\t#nameInput\n\t\t\t\t\t>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"col-sm-2 form-group\">\n\t\t\t\t\t<label for=\"amount\">Amount</label>\n\t\t\t\t\t<input \n\t\t\t\t\t\ttype=\"number\" \n\t\t\t\t\t\tid=\"amount\" \n\t\t\t\t\t\tclass=\"form-control\"\n\t\t\t\t\t\t#amountInput\n\t\t\t\t\t\t>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"col-xs-12\">\n\t\t\t\t<button class=\"btn btn-success\" type=\"submit\" (click)=\"onAddClick();\">Add</button>\n\t\t\t\t<button class=\"btn btn-danger\" type=\"button\">Delete</button>\n\t\t\t\t<button class=\"btn btn-primary\" type=\"button\">Clear</button>\n\t\t\t</div>\n\t\t</form>\n\t</div>\n</div>"
+
+/***/ }),
+
+/***/ 229:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\n\t<div class=\"col-xs-10\">\n\t\t<app-shopping-edit></app-shopping-edit>\n\t\t<hr>\n\t\t<ul class=\"list-group\">\n\t\t\t<a \n\t\t\t\tclass=\"list-group-item\" \n\t\t\t\tstyle=\"cursor: pointer\"\n\t\t\t\t*ngFor=\"let ingredient of ingredients\">\t\n\t\t\t\t{{ingredient.name}} ({{ingredient.amount}})\n\t\t\t</a>\n\t\t</ul>\n\t</div>\n</div>\n"
+
+/***/ }),
+
+/***/ 298:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(130);
+module.exports = __webpack_require__(126);
+
+
+/***/ }),
+
+/***/ 36:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__recipe_model__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_ingredient_model__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shopping_list_shopping_list_service__ = __webpack_require__(37);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecipesService; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var RecipesService = (function () {
+    function RecipesService(shoppingListService) {
+        this.shoppingListService = shoppingListService;
+        this.recipeSelected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* EventEmitter */]();
+        this.recipes = [
+            new __WEBPACK_IMPORTED_MODULE_1__recipe_model__["a" /* Recipe */]("Pasta al pomodoro", "Una scialbissima pasta al pomodoro", "http://images.lacucinaitaliana.it/wp-content/uploads/2015/07/spaghetti-al-pomodoro-ricetta.jpg", [
+                new __WEBPACK_IMPORTED_MODULE_2__shared_ingredient_model__["a" /* Ingredient */]('pasta', 100),
+                new __WEBPACK_IMPORTED_MODULE_2__shared_ingredient_model__["a" /* Ingredient */]('pomodoro', 1)
+            ]),
+            new __WEBPACK_IMPORTED_MODULE_1__recipe_model__["a" /* Recipe */]("Toast", "Un fantastico toassst", "http://www.bovis.it/resources/bovis.it/upload/Recipe_Recipe_7_toast.jpg", [
+                new __WEBPACK_IMPORTED_MODULE_2__shared_ingredient_model__["a" /* Ingredient */]('pancarrè', 2),
+                new __WEBPACK_IMPORTED_MODULE_2__shared_ingredient_model__["a" /* Ingredient */]('prosciutto', 1),
+                new __WEBPACK_IMPORTED_MODULE_2__shared_ingredient_model__["a" /* Ingredient */]('sottiletta', 1)
+            ])
+        ];
+    }
+    RecipesService.prototype.getRecipes = function () {
+        return this.recipes.slice(); //ritorna una copia (slice)
+    };
+    RecipesService.prototype.addIngredientsToShoppingList = function (ingredients) {
+        this.shoppingListService.addIngredients(ingredients);
+    };
+    return RecipesService;
+}());
+RecipesService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__shopping_list_shopping_list_service__["a" /* ShoppingListService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__shopping_list_shopping_list_service__["a" /* ShoppingListService */]) === "function" && _a || Object])
+], RecipesService);
+
+var _a;
+//# sourceMappingURL=recipes.service.js.map
+
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_ingredient_model__ = __webpack_require__(50);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShoppingListService; });
+
+
+var ShoppingListService = (function () {
+    function ShoppingListService() {
+        this.ingredients = [
+            new __WEBPACK_IMPORTED_MODULE_1__shared_ingredient_model__["a" /* Ingredient */]('sale', 4),
+            new __WEBPACK_IMPORTED_MODULE_1__shared_ingredient_model__["a" /* Ingredient */]('pepe', 3)
+        ];
+        this.onAddIngredient = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* EventEmitter */]();
+    }
+    ShoppingListService.prototype.addIngredient = function (ingredient) {
+        this.ingredients.push(ingredient);
+        this.onAddIngredient.emit(this.ingredients.slice());
+    };
+    ShoppingListService.prototype.addIngredients = function (ingredients) {
+        (_a = this.ingredients).push.apply(_a, ingredients); // i tre punti trasformano l'array in lista
+        this.onAddIngredient.emit(this.ingredients.slice());
+        var _a;
+    };
+    ShoppingListService.prototype.getIngredients = function () {
+        return this.ingredients.slice();
+    };
+    return ShoppingListService;
+}());
+
+//# sourceMappingURL=shopping-list.service.js.map
+
+/***/ }),
+
+/***/ 49:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Recipe; });
+var Recipe = (function () {
+    function Recipe(name, description, imagePath, ingredients) {
+        this.name = name;
+        this.description = description;
+        this.imagePath = imagePath;
+        this.ingredients = ingredients;
+    }
+    return Recipe;
+}());
+
+//# sourceMappingURL=recipe.model.js.map
+
+/***/ }),
+
+/***/ 50:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ingredient; });
+var Ingredient = (function () {
+    function Ingredient(name, amount) {
+        this.name = name;
+        this.amount = amount;
+    }
+    return Ingredient;
+}());
+
+//# sourceMappingURL=ingredient.model.js.map
+
+/***/ }),
+
+/***/ 80:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageNotFoundComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PageNotFoundComponent = (function () {
+    function PageNotFoundComponent() {
+    }
+    PageNotFoundComponent.prototype.ngOnInit = function () {
+        console.log("Just a test");
+    };
+    return PageNotFoundComponent;
+}());
+PageNotFoundComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-page-not-found',
+        template: __webpack_require__(223),
+        styles: [__webpack_require__(204)]
+    }),
+    __metadata("design:paramtypes", [])
+], PageNotFoundComponent);
+
+//# sourceMappingURL=page-not-found.component.js.map
+
+/***/ }),
+
+/***/ 81:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__recipes_service__ = __webpack_require__(36);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecipesComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RecipesComponent = (function () {
+    function RecipesComponent(recipesService) {
+        this.recipesService = recipesService;
+    }
+    RecipesComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.recipesService.recipeSelected.subscribe(function (recipe) { _this.selectedRecipe = recipe; });
+    };
+    return RecipesComponent;
+}());
+RecipesComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-recipes',
+        template: __webpack_require__(227),
+        styles: [__webpack_require__(208)],
+        providers: [__WEBPACK_IMPORTED_MODULE_1__recipes_service__["a" /* RecipesService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__recipes_service__["a" /* RecipesService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__recipes_service__["a" /* RecipesService */]) === "function" && _a || Object])
+], RecipesComponent);
+
+var _a;
+//# sourceMappingURL=recipes.component.js.map
+
+/***/ }),
+
+/***/ 82:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shopping_list_service__ = __webpack_require__(37);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShoppingListComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ShoppingListComponent = (function () {
+    function ShoppingListComponent(shoppingListService) {
+        var _this = this;
+        this.shoppingListService = shoppingListService;
+        this.shoppingListService.onAddIngredient.subscribe(function (ingredients) { _this.ingredients = ingredients; });
+    }
+    ShoppingListComponent.prototype.ngOnInit = function () {
+        this.ingredients = this.shoppingListService.getIngredients();
+    };
+    return ShoppingListComponent;
+}());
+ShoppingListComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* Component */])({
+        selector: 'app-shopping-list',
+        template: __webpack_require__(229),
+        styles: [__webpack_require__(210)]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shopping_list_service__["a" /* ShoppingListService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__shopping_list_service__["a" /* ShoppingListService */]) === "function" && _a || Object])
+], ShoppingListComponent);
+
+var _a;
+//# sourceMappingURL=shopping-list.component.js.map
+
+/***/ })
+
+},[298]);
+//# sourceMappingURL=main.bundle.js.map

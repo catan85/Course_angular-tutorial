@@ -10,15 +10,6 @@ export class AppComponent {
 
 	constructor() {
   		//this.currentView = '';
+			console.log("application created");
   	}
-
-
-    /*
-  	changeView(currentView)
-  	{
-  		console.log("view changed: " + currentView);
-  		this.currentView = currentView;
-  	}
-    */
-
 }
