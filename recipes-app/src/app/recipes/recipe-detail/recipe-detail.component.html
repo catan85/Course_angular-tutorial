@@ -8,6 +8,7 @@
 	</div>
 </div>
 <div class="col-xs-12">
+	<h1>Recipe detail component</h1>
 	<h1>{{recipe.name}}</h1>
 </div>
 <div class="row">
@@ -21,7 +22,7 @@
 			</button>
 			<ul class="dropdown-menu">
 				<li (click)="toShoppingList();" ><a href="#">To Shopping List</a></li>
-				<li><a>Edit recipe</a></li>
+				<li [routerLink]="['/recipes', id, 'edit']" ><a>Edit recipe</a></li>
 				<li><a>Delete recipe</a></li>
 			</ul>
 		</div>
