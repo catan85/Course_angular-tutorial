@@ -8,8 +8,8 @@
             "url": "http://localhost:4200",
             "sourceMaps": true,
             "trace": true,
-            "webRoot": "${workspaceRoot}/recipes-app",
-            "userDataDir": "${workspaceRoot}/recipes-app/.vscode/chrome"
+            "webRoot": "${workspaceRoot}/observable-start",
+            "userDataDir": "${workspaceRoot}/observable-start/.vscode/chrome"
         },
         {
             "name": "Attach to Chrome, with sourcemaps",
@@ -18,7 +18,7 @@
             "port": 9222,
             "sourceMaps": true,
             "trace": true,
-            "webRoot": "${workspaceRoot}/recipes-app"
+            "webRoot": "${workspaceRoot}/observable-start"
         }
     ]
 }
