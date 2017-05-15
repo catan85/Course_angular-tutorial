@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+
 import { Recipe } from '../../recipe.model';
 
 @Component({
@@ -7,17 +8,9 @@ import { Recipe } from '../../recipe.model';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
+  @Input() recipe: Recipe;
+  @Input() index: number;
 
-	@Input() recipeData : Recipe;
-  @Input() index : number;
-	name = 'none';
-	description = 'none';
-	imagePath = 'none';
-
-    ngOnInit() {
-    	this.name = this.recipeData.name;
-    	this.description = this.recipeData.description;
-    	this.imagePath = this.recipeData.imagePath;
-  	}
-
+  ngOnInit() {
+  }
 }

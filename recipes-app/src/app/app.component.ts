@@ -6,10 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	//currentView :string;
+  loadedFeature = 'recipe';
 
-	constructor() {
-  		//this.currentView = '';
-			console.log("application created");
-  	}
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
