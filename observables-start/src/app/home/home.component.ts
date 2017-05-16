@@ -18,13 +18,15 @@ export class HomeComponent implements OnInit {
     //    console.log(number);
     //  }
     // );
-    const myObservable = Observable.create((observer: Observer<string>) => {
-      setTimeout(()=>{observer.next('first package');
-    }, 2000);
-      setTimeout(() => {observer.next('second package');
-    }, 4000);
-      setTimeout(() => {observer.error('this not worked');
-    },5000);
+    const myObservable = Observable.create((observer: Observer<string>) => 
+    {
+      setTimeout(() => {observer.next('first package');}, 2000);
+      setTimeout(() => {observer.next('second package');}, 4000);
+      setTimeout(() => 
+      {   //observer.error('this does not work');
+        observer.complete();
+      },5000);
+      setTimeout(() => {observer.next('never arrives!');}, 6000);
   });
   
   myObservable.subscribe(
