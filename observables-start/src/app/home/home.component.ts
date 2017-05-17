@@ -2,7 +2,7 @@ import { Component, OnInit , OnDestroy} from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Observer } from 'rxjs/Observer';
 import { Subscription } from 'rxjs/Subscription';
-import 'rxjs/Rx'; // serve per l'oggetto .interval
+import 'rxjs/Rx'; // serve per avere gli operatori
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,7 +16,12 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
-    const myNumbers = Observable.interval(1000);
+    const myNumbers = Observable.interval(1000)
+      .map(  // map serve mappare l'observable e modificarlo al volo
+        (data: number) => {
+          return data*2;
+        }
+      )
     this.numbersObservableSubscription = myNumbers.subscribe(
      (number: number) => {
        console.log(number);
