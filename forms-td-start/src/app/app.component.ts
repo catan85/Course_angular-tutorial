@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,7 +10,7 @@ export class AppComponent {
     const suggestedName = 'Superuser';
   }
 
-  onSubmit(){
-    console.log("sumitted!");
+  onSubmit(form: NgForm){
+    console.log(form.value["username"]);
   }
 }
