@@ -15,7 +15,7 @@ export class AppComponent {
   }
 
   onSubmit(){
-      console.log(this.form.value["username"]);
+      console.log(this.form);
   }
 
 
