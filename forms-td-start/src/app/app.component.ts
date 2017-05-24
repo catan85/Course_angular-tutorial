@@ -49,7 +49,9 @@ export class AppComponent {
       this.user.secret = this.signupForm.value.secret;
       this.user.questionAnswer = this.signupForm.value.questionAnswer;
       this.user.gender = this.signupForm.value.gender;
-  }
+      
+      this.signupForm.reset();
+}
 
 
 // onSubmit(form: NgForm){
