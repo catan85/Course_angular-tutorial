@@ -13,14 +13,14 @@ export class RecipeService {
     new Recipe(
       'Tasty Schnitzel',
       'A super-tasty Schnitzel - just awesome!',
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png',
+      'http://www.daringgourmet.com/wp-content/uploads/2014/03/Schnitzel-7_edited.jpg',
       [
         new Ingredient('Meat', 1),
         new Ingredient('French Fries', 20)
       ]),
     new Recipe('Big Fat Burger',
       'What else you need to say?',
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png',
+      'http://oi1041.photobucket.com/albums/b412/juliet76_405th/the%20RPF/Big%20K%20Props/BKB003.jpg',
       [
         new Ingredient('Buns', 2),
         new Ingredient('Meat', 1)
