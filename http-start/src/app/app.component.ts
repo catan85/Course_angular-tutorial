@@ -38,4 +38,15 @@ export class AppComponent {
     (error) => console.log(error)
     );
   }
+
+  onGet(){
+    this.serverService.getServers()
+    .subscribe((servers: any[]) => {
+      console.log(servers);
+    }
+    ,
+    (error) => console.log(error)
+    );
+  }
+
 }
