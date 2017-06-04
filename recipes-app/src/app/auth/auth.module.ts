@@ -1,3 +1,4 @@
+import { AuthRoutingModule } from './auth-routing.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -11,7 +12,8 @@ import { SigninComponent } from './signin/signin.component';
     ],
     imports:[
         CommonModule,
-        FormsModule
+        FormsModule,
+        AuthRoutingModule
     ],
     
 })
