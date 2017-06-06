@@ -4,6 +4,8 @@ import { UserService } from './user.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserComponent } from './user.component';
+import { fakeAsync } from "@angular/core/testing";
+import { tick } from "@angular/core/testing";
 
 describe('UserComponent', () => {
   beforeEach(()=> {
@@ -66,5 +68,14 @@ describe('UserComponent', () => {
     });
   }));
 
-
+  it('should fetch data succesfully if called asynchronously', fakeAsync(() => {
+    let fixture = TestBed.createComponent(UserComponent);
+    let app = fixture.debugElement.componentInstance;
+    let dataService = fixture.debugElement.injector.get(DataService);
+    let spy = spyOn(dataService, 'getDetails')
+      .and.returnValue(Promise.resolve('Data'));
+    fixture.detectChanges();
+    tick();
+    expect(app.data).toBe('Data');
+  }));
 });
