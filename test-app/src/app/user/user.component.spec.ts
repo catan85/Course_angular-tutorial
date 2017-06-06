@@ -55,7 +55,7 @@ describe('UserComponent', () => {
       expect(app.data).toBe(undefined);
   });
 
-
+ // async 
   it('should fetch data succesfully if called asynchronously', async(() => {
     let fixture = TestBed.createComponent(UserComponent);
     let app = fixture.debugElement.componentInstance;
@@ -67,7 +67,7 @@ describe('UserComponent', () => {
       expect(app.data).toBe('Data');
     });
   }));
-
+// fake async (come l'async ma forza il completamento)
   it('should fetch data succesfully if called asynchronously', fakeAsync(() => {
     let fixture = TestBed.createComponent(UserComponent);
     let app = fixture.debugElement.componentInstance;
